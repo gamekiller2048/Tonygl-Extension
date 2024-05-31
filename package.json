@@ -5,6 +5,10 @@
     "vscode": ">=0.9.0-pre.1"
   },
   "publisher": "gamekiller2048",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gamekiller2048/tonygl-extension.git"
+  },
   "contributes": {
     "languages": [
       {
