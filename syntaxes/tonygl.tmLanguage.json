@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "tonygl",
+  "scopeName": "source.tg",
+  "fileTypes": [".tonygl", ".tg"],
+  
+  "patterns": [
+      {"include": "#comments"},
+      {"include": "#keywords"},
+      {"include": "#strings"},
+      {"include": "#numbers"},
+      {"include": "#entities"}
+  ],
+  
+
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.tonygl",
+          "begin": "#",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.tonygl"
+            }
+          },
+          "end": "$",
+          "contentName": "comment.line.number-sign.tonygl"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.tonygl",
+          "begin": "\"",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin.tonygl"
+            }
+          },
+          "end": "\"",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end.tonygl"
+            }
+          },
+          "contentName": "string.quoted.double.tonygl"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.tonygl",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.tonygl",
+          "match": "\\b(if|elif|else|for|return|import)\\b"
+        },
+        {
+          "name": "keyword.control.jump.tonygl",
+          "match": "\\b(jump)\\b"
+        },
+        {
+          "name": "keyword.declaration.tonygl",
+          "match": "\\b(var|const|ref|label|func)\\b"
+        },
+        {
+          "name": "keyword.value.tonygl",
+          "match": "\\b(true|false|none)\\b"
+        }
+      ]
+    },
+
+    "entities": {
+      "patterns": [
+        {
+          "name": "entity.name.tonygl",
+          "match": "(\\w+)(?=\\()"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "Tonygl Theme",
+  
+  "settings": [
+    {
+      "scope": "comment.line.number-sign.tonygl",
+      "settings": {
+        "foreground": "#6A9955",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword.control.tonygl",
+      "settings": {
+        "foreground": "#e171e3",
+      }
+    },
+    {
+      "scope": "keyword.declaration.tonygl",
+      "settings": {
+        "foreground": "#6f97f2",
+      }
+    },
+    {
+      "scope": "entity.name.tonygl",
+      "settings": {
+        "foreground": "#bfcfff",
+      }
+    },
+    {
+      "scope": "keyword.control.jump.tonygl",
+      "settings": {
+        "foreground": "#64ed76",
+      }
+    },
+    {
+      "scope": "keyword.value.tonygl",
+      "settings": {
+        "foreground": "#e39d64",
+      }
+    },
+    {
+      "scope": "string.quoted.double.tonygl",
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "scope": "constant.numeric.tonygl",
+      "settings": {
+        "foreground": "#57e9ff"
+      }
+    }
+  ]
+}
