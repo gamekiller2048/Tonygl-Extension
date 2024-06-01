@@ -1,43 +1,52 @@
 {
-  "name": "tonygl",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": ">=0.9.0-pre.1"
-  },
-  "publisher": "gamekiller2048",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/gamekiller2048/tonygl-extension.git"
-  },
-  "contributes": {
-    "languages": [
-      {
-        "id": "tonygl",
-        "aliases": ["Tonygl", "tonygl"],
-        "extensions": [".tonygl", ".tg"],
-        "configuration": "./language-configuration.json",
+	"name": "tonygl",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": ">=0.9.0-pre.1"
+	},
 
-        "icon": {
-          "light": "./themes/icons/light.png",
-          "dark": "./themes/icons/dark.png"
-        }
-      }
-    ],
-    
-    "grammars": [
-      {
-        "language": "tonygl",
-        "scopeName": "source.tg",
-        "path": "./syntaxes/tonygl.tmLanguage.json"
-      }
-    ],
+	"displayName": "Tonygl",
+	"publisher": "gamekiller2048",
+	"description": "Syntax Highlighting and Support for Tonygl",
+	"homepage": "./README.md",
 
-    "themes":[
-      {
-        "label": "Tonygl Theme",
-        "uiTheme": "vs-dark",
-        "path": "./themes/tonygl.tmTheme.json"
-      }
-    ]
-  }
+	"icon": "./icons/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/gamekiller2048/tonygl-extension.git"
+	},
+
+	"contributes": {
+		"languages": [
+			{
+				"id": "tonygl",
+				"aliases": ["Tonygl", "tonygl"],
+				"extensions": [".tonygl", ".tg"],
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"light": "./icons/logo.png",
+					"dark": "./icons/logo.png"
+				}
+			}
+		],
+		"grammars": [
+			{
+				"language": "tonygl",
+				"scopeName": "source.tg",
+				"path": "./syntaxes/tonygl.tmLanguage.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Tonygl Dark Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/tonygl.tmTheme.json"
+			},
+			{
+				"label": "Tonygl Light Theme",
+				"uiTheme": "hc-light",
+				"path": "./themes/tonygl.tmTheme.json"
+			}
+		]
+	}
 }
