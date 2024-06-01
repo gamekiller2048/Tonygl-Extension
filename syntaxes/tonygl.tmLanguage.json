@@ -11,7 +11,6 @@
       {"include": "#numbers"},
       {"include": "#entities"}
   ],
-  
 
   "repository": {
     "comments": {
@@ -77,7 +76,6 @@
         }
       ]
     },
-
     "entities": {
       "patterns": [
         {
