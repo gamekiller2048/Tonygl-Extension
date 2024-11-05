@@ -6,7 +6,7 @@
     {
       "scope": "comment.line.number-sign.tonygl",
       "settings": {
-        "foreground": "#6A9955",
+        "foreground": "#bf9c5a",
         "fontStyle": "italic"
       }
     },
