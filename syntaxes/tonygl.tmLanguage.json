@@ -68,7 +68,7 @@
         },
         {
           "name": "keyword.declaration.tonygl",
-          "match": "\\b(var|const|ref|label|func)\\b"
+          "match": "\\b(var|const|ref|label|func|namespace)\\b"
         },
         {
           "name": "keyword.value.tonygl",
